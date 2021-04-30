@@ -1,0 +1,2232 @@
+/****************************************************
+                Estilos globales
+*****************************************************/
+body {
+    overflow-x: hidden !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.contenedor {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu {
+    display: none;
+}
+
+.btnHover {
+    transition: all .2s ease-in-out;
+}
+
+.btnHover:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.offcanvas-header {
+    display: none;
+}
+
+/* Fuente Montserrat */
+/* Bold */
+@font-face {
+    font-family: MontserratBold;
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+table {
+    height: 450px;
+    margin-top: 20px;
+}
+p.txtTable {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 900;
+    padding-right: 20px;
+}
+td.txtTD {
+    color: #00394C;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+/****************************************************
+                Carousel Hero
+*****************************************************/
+img.movil {
+    display: none!important;
+}
+.bd-example {
+    border-bottom: 20px solid #129B46;
+}
+
+.carousel-indicators li {
+    margin-top: 105px;
+}
+
+.bd-example h1 {
+    font-size: 3em;
+    color: #FFFFFF;
+    font-family: 'MontserratBold';
+    margin-bottom: 22px;
+    line-height: 72px;
+    letter-spacing: .02em;
+}
+
+.bd-example ol {
+    margin-bottom: 80px;
+}
+
+.bd-example p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    width: 75%;
+}
+
+.button-container {
+    float: left;
+    display: flex;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.bd-example .btnContactTransparent {
+    color: white;
+    background: rgba(0, 57, 76, 0.35);
+    padding: 13px 30px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #FFFFFF;
+    margin-left: 35px;
+    transition: all .2s ease-in-out;
+}
+
+.bd-example h1,
+.bd-example p {
+    text-align: left;
+    margin-top: 0;
+}
+
+.carousel-item img {
+    filter: brightness(65%) !important;
+}
+
+.imgPrev,
+.imgNext {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 10px 15px;
+    top: 50%;
+    color: black;
+    font-weight: bold;
+    background: white;
+    font-size: 25px;
+    transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.imgPrev {
+    margin-left: 45px;
+    border-radius: 100%;
+}
+
+.imgNext {
+    right: 45px;
+    border-radius: 100%;
+}
+
+/*****************************************************
+                    Columnas azules
+*****************************************************/
+.cajasAzul {
+    margin-top: -50px;
+
+}
+
+.caja {
+    background: #00394C;
+    height: 275px;
+    padding: 45px 0;
+    border-top: transparent;
+    border-bottom: transparent;
+    border-left: transparent;
+    border-right: 1px solid white;
+}
+
+.caja:last-child {
+    border-right: none;
+}
+
+.caja h1 {
+    font-size: 30px;
+    color: white;
+    font-weight: 900;
+}
+
+.caja p {
+    font-size: 14px;
+    color: white;
+    font-weight: 100;
+}
+
+/*****************************************************
+                    Columnas about
+*****************************************************/
+.cajaAbout img {
+    /*width: 100%;*/
+    height: 450px;
+    margin-bottom: 50px;
+}
+
+.titulo {
+    display: flex;
+}
+
+.titulo img {
+    margin-top: 10px;
+    height: 25%;
+    width: 25%;
+    margin-right: 15px;
+}
+
+.txtTit {
+    color: #00394C;
+    font-weight: 600;
+}
+
+.txtUni {
+    color: #00394C;
+    font-family: 'MontserratBold';
+    margin-top: -5px;
+}
+
+.txtDesc {
+    width: 85%;
+    font-size: 14px;
+    color: #5F7D95;
+    font-weight: 400;
+}
+
+.txtLista li {
+    color: #00394C;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 38px;
+    margin-left: -40px;
+}
+
+.bola {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.bola::before {
+    content: '● ';
+    color: green;
+    font-size: 15px;
+}
+
+/*****************************************************
+                Columnas proyect galery
+*****************************************************/
+.infoProy {
+    padding-top: 40px !important;
+
+}
+
+.cajProy h1 {
+    font-size: 20px;
+    font-family: 'MontserratBold';
+}
+
+.cajProy p {
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.colProy {
+    height: 380px;
+    background: #F7F8F9;
+    padding: 30px 0px 0px 0px;
+}
+
+.imgProy {
+    height: 300px;
+    transition: all .2s ease-in-out;
+}
+
+.imgProy:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/*****************************************************
+                Columna our model
+*****************************************************/
+.ourModel {
+    margin-bottom: 20px;
+}
+
+.ourModel h1 {
+    font-size: 45px;
+    color: #00394C;
+    font-family: 'MontserratBold';
+    text-align: center;
+}
+
+.ourModel p {
+    width: 65%;
+    color: #5F7D95;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#imgModal {
+    padding: 50px;
+}
+
+#colLotes button {
+    display: none;
+}
+
+#lotes .lotShape .lot {
+    fill: #fff;
+    stroke: #00394c;
+    stroke-width: 1;
+}
+#lotes .lotNull .lot {
+    fill: #fff;
+    stroke: #00394c;
+    stroke-width: 1;
+}
+
+#lotes .lotShape:hover .lot {
+    fill: green;
+    cursor: pointer;
+}
+
+#lotes .lotShape:hover .number {
+    fill: white;
+}
+
+#lotes {
+    position: relative;
+}
+
+
+/*****************************************************
+            Download information + button
+*****************************************************/
+.cajaDown {
+    background: #F7F8F9;
+    height: 650px;
+}
+
+.cajaImg {
+    display: flex;
+    margin-top: -50px;
+}
+
+.industrial {
+    width: 30%;
+    height: 500px;
+    margin-right: 12px;
+    background-image: url("../img/industrial.png");
+    background-size: cover;
+    position: relative;
+}
+
+.industrial::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(360deg, #00394C 0%, rgba(0, 57, 76, 0) 100%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.bts {
+    width: 40%;
+    height: 500px;
+    background-image: url("../img/bts.png");
+    background-size: cover;
+    position: relative;
+}
+
+.bts::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(360deg, #00394C 0%, rgba(0, 57, 76, 0) 100%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.buldi {
+    width: 30%;
+    height: 500px;
+    margin-left: 12px;
+    background-image: url("../img/buldings.png");
+    background-size: cover;
+    position: relative;
+}
+
+.buldi::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(360deg, #00394C 0%, rgba(0, 57, 76, 0) 100%);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.info {
+    margin-top: 280px;
+}
+
+.info img {
+    position: relative;
+}
+
+.info h1 {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'MontserratBold';
+    ;
+    position: relative;
+}
+
+.info p {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+}
+
+/*****************************************************
+                Download information
+*****************************************************/
+.cajaInfo {
+    display: flex;
+    padding: 75px 0;
+    margin-top: -220px;
+}
+
+.cajaInfo img {
+    height: 30%;
+    width: 8%;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+.cajaInfo h1 {
+    color: #00394C;
+    font-weight: 900;
+    font-size: 30px;
+}
+
+.cajaInfo p {
+    color: #00394C;
+    font-weight: 400;
+    font-size: 16px;
+    width: 90%;
+    margin-top: 10px;
+}
+
+.btnDownload {
+    margin-top: -115px;
+}
+
+.btnDownload button {
+    width: 105%;
+    padding: 20px 100px;
+    background: #129B46;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+/*****************************************************
+                 Columnas strategic
+*****************************************************/
+.btnContact {
+    padding: 15px 30px;
+    text-align: center;
+    background: #129B46;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+}
+
+/*****************************************************
+                Columnas population
+*****************************************************/
+.txtPop {
+    font-size: 35px;
+    color: #00394C;
+    font-family: 'MontserratBold';
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+.imgPop img {
+    margin-left: -30px;
+}
+
+/*****************************************************
+                Columnas key benefits
+*****************************************************/
+.cajaKey {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.txtBenefit {
+    width: 50% !important;
+    color: #00394C;
+    font-weight: 400 !important;
+}
+
+.infoKey {
+    display: flex;
+}
+
+.infoKey img {
+    width: 10%;
+    height: 10%;
+    margin-top: 15px;
+}
+
+.infoKey h1 {
+    font-size: 16px;
+    color: #00394C;
+    font-weight: 900;
+    margin-left: 15px;
+}
+
+.infoKey p {
+    font-size: 14px;
+    color: #00394C;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/*****************************************************
+          Columnas solid infraestructura
+*****************************************************/
+.cajaSolid {
+    background-image: url("../img/estructura.png");
+    background-size: cover;
+    margin-left: 150px;
+    height: 480px;
+    position: relative;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+.cajaSolid::before {
+    content: '';
+    position: absolute;
+    background: #00394C;
+    opacity: 70%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+div.cajaFlotante {
+    height: 360px;
+    background: #ffffff;
+    border: none;
+    top: 50px;
+    margin-left: -75px;
+    padding: 50px 50px 0px 40px;
+
+}
+
+.div2 {
+    margin-top: 10px;
+}
+
+.cajaFlotante h1 {
+    color: #00394C;
+    font-family: 'MontserratBold';
+    font-size: 22px;
+}
+
+.cajaFlotante p {
+    width: 90%;
+    color: #00394C;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.cajaFlotante button {
+    background: #129B46;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    padding: 8px 20px;
+    border: none;
+
+}
+
+.colInfo1 {
+    padding: 70px 45px;
+}
+
+.colInfo2 {
+    padding: 60px 35px;
+}
+
+.infoSolid {
+    display: flex;
+}
+
+.infoSolid img {
+    width: 10%;
+    height: 10%;
+    margin-top: 15px;
+    position: relative;
+}
+
+.infoSolid h1 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 900;
+    margin-left: 15px;
+    position: relative;
+}
+
+.infoSolid p {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+}
+
+/*****************************************************
+                 Columnas metro bus
+*****************************************************/
+.cajaContenedora {
+    height: 530px;
+    background: #F7F8F9;
+    margin-bottom: 50px;
+}
+
+.cajaMetro {
+    padding: 45px 0;
+}
+
+.infoBus {
+    padding: 50px 20px;
+}
+
+.infoBus h1 {
+    color: #00394C;
+    font-family: 'MontserratBold';
+    font-size: 25px;
+}
+
+.infoBus h3 {
+    color: #5F7D95;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.imgBus img {
+    height: 420px;
+}
+
+.frameBus {
+    height: 150px;
+    margin-left: -10px;
+}
+
+.cajaMapaBus {
+    background: #5F7D95;
+    position: relative;
+    height: 480px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.cajaImgMapa {
+    padding-right: 60px;
+    padding-top: 40px;
+}
+
+.imgMapa img {
+    height: 420px;
+    margin-left: -55px;
+}
+
+.imgInfoRutas {
+    height: 420px;
+    background-image: url("../img/terminales.png");
+    background-size: cover;
+    border: 3px solid white;
+}
+
+.imgInfoRutas p {
+    color: #00394C;
+    font-family: 'MontserratBold';
+    font-size: 20px;
+    padding: 12px 8px;
+    line-height: 29px;
+    position: relative;
+}
+
+.cajMapMov {
+    display: none;
+}
+
+/*****************************************************
+                Columnas get to know
+*****************************************************/
+.cajaVideo {
+    height: 300px;
+    margin-bottom: 100px;
+}
+
+.infoVideo {
+    background: #129B46;
+    background-size: cover;
+    position: relative;
+    padding: 55px;
+}
+
+div.infoVideo::before {
+    content: '';
+    position: absolute;
+    background-image: url("../img/iconVideo.png");
+    background-size: cover;
+    margin-left: 285px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.infoVideo img {
+    height: 3px;
+    width: 50px;
+}
+
+.infoVideo h1 {
+    position: relative;
+    color: #ffffff;
+    font-family: 'MontserratBold';
+    font-size: 30px;
+}
+
+.infoVideo p {
+    position: relative;
+    color: #F2F5F6;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.infoVideo button {
+    position: relative;
+    background: #00394C;
+    color: white;
+    padding: 12px 20px;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+}
+
+.video {
+    height: 350px;
+    width: 100%;
+    background-image: url(../img/video.png);
+    background-size: cover;
+}
+
+/*****************************************************
+                  Columnas empresas
+*****************************************************/
+.txtFinal h1 {
+    color: #00394C;
+    font-family: 'MontserratBold';
+    font-size: 32px;
+}
+
+.txtFinal p {
+    color: #5F7D95;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.imgEmpresas {
+    margin: 10px;
+}
+
+.imgEmpresas img {
+    width: 85%;
+}
+
+.empresasMovil {
+    display: none;
+}
+
+/****************************************************
+                    Gracias
+****************************************************/
+div.gracias {
+    margin-top: 150px;
+}
+
+.gracias h1 {
+    font-size: 72px;
+    color: #00394C;
+    font-family: 'MontserratBold';
+    margin-bottom: 0;
+}
+
+.gracias p {
+    font-size: 26px;
+    color: #5F7D95;
+    font-weight: 500;
+    text-align: center;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btnGracias {
+    padding: 10px 70px;
+    background: #129B46;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 900;
+    border: transparent;
+    margin-bottom: 20px;
+}
+
+/****************************************************
+         ADAPTACION A DISPOSITIVOS MOVILES 
+****************************************************
+
+/***************************************************** Monitor *****************************************************/
+
+@media screen and (min-width: 1920px) {
+    /****************************************************
+                    Carousel hero
+    ****************************************************/
+    .bd-example h1 {
+        margin-top: -525px;
+    }
+    .carousel-indicators li {
+        margin-top: 320px;
+        height: 10px;
+        width: 50px;
+    }
+    h1.carH1 {
+        font-size: 70px;
+    }
+    /****************************************************
+                    Proyect galery
+    ****************************************************/
+    .colProy {
+        height: 440px;
+    }
+    .imgProy {
+        height: 380px;
+    }
+} 
+/***************************************************** TABLET *****************************************************/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #menuMovil {
+        display: block;
+    }
+
+    .contenedor {
+        width: 90%;
+    }
+
+    /****************************************************
+                        Header
+    ****************************************************/
+
+    #header {
+        display: none;
+    }
+
+    #fondoNav {
+        background: white;
+        box-shadow: 0px 3px #cfdadd9a;
+    }
+
+    #iconMov1,
+    #iconMov2 {
+        height: 40%;
+        margin-left: -15px;
+    }
+
+    #iconMov2 {
+        display: none;
+        margin-left: -125px;
+    }
+
+    #cerrar {
+        display: none;
+    }
+
+    .navbar-toggler-icon {
+        color: #FFFFFF;
+    }
+
+    #iconTel {
+        margin-left: 490px;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("../icons/hamburgesa.png") !important;
+        margin-left: -15px;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: transparent;
+        font-size: 1rem !important;
+    }
+
+    .menu {
+        display: block !important;
+        width: 100%;
+    }
+
+    .linkMovil li {
+        color: #FFFFFF;
+        font-size: 25px;
+        font-weight: 900;
+        list-style: none;
+        padding: 10px 0px;
+    }
+
+    .idioma {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .idioma a {
+        color: #FFFFFF;
+        font-size: 13px;
+        font-weight: 900;
+        padding: 0;
+        margin: 0;
+    }
+
+    a.eng {
+        margin-left: 10px;
+    }
+
+    a.es {
+        margin-left: -20px;
+    }
+
+    a.ch {
+        margin-left: -10px;
+    }
+
+    /****************************************************
+                    Carousel hero
+    ****************************************************/
+    h1.carH1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    p.parrafo {
+        font-size: 14px;
+    }
+
+    .btnContact,
+    .bd-example .btnContactTransparent {
+        font-size: 10px;
+    }
+
+    .button-container {
+        margin-bottom: 50px;
+    }
+
+    .carousel-indicators li {
+        margin-top: -170px;
+    }
+
+    .imgPrev,
+    .imgNext {
+        display: none;
+    }
+
+    /****************************************************
+                    Columnas about
+    ****************************************************/
+    .cajaAbout img {
+        height: 300px;
+    }
+
+    .imgAbout {
+        margin-top: 50px;
+        margin-left: -12px;
+    }
+
+    img.rectangulo {
+        height: 10px;
+    }
+
+    .txtTit {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .txtUni {
+        font-size: 25px;
+    }
+
+    .txtDesc {
+        width: 90%;
+    }
+
+    .txtLista li {
+        font-size: 13px;
+    }
+
+    /****************************************************
+                Columnas proy galery
+    ****************************************************/
+    .colProy {
+        height: 600px;
+    }
+
+    .imgProy {
+        margin-left: -50px;
+        padding: 5px;
+        transition: none;
+    }
+
+    .imgProy:hover {
+        transform: none;
+    }
+
+    /****************************************************
+                    Columnas our model
+    ****************************************************/
+    .imgFases {
+        margin-bottom: 25px;
+    }
+
+    /****************************************************
+                    Lotes Modal
+    ****************************************************/
+    .modal-content {
+        height: 650px !important;
+        width: 675px !important;
+        margin-left: -80px !important;
+        padding: 0;
+    }
+
+    img#imgModal {
+        height: 320px;
+        padding: 0;
+    }
+
+    button.btnLote {
+        margin-left: 145px;
+    }
+
+    #piesLotes {
+        margin-left: 200px;
+    }
+
+    #txtLotes {
+        margin-left: 250px;
+    }
+
+    /****************************************************
+                Columnas download information
+    ****************************************************/
+    .info h1 {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 12px;
+    }
+
+    .cajaInfo img {
+        width: 10%;
+        margin-top: 15px;
+    }
+
+    div.cajaInfo h1 {
+        font-size: 20px !important;
+    }
+
+    div.cajaInfo p {
+        font-size: 14px;
+    }
+
+    .btnDownload button {
+        width: 110%;
+        font-size: 14px;
+        padding: 20px 30px;
+    }
+
+    /****************************************************
+                Columnas population around
+    ****************************************************/
+    .txtPop {
+        font-size: 30px;
+        margin-bottom: 10px;
+        width: 85%;
+    }
+
+    .imgPop img {
+        margin-left: 35px;
+        margin-bottom: 20px;
+    }
+
+    .imgList img {
+        margin-left: 50px;
+    }
+
+    .txtBenefit {
+        width: 60% !important;
+    }
+
+    /*****************************************************
+                Columnas solid infraestructura
+    *****************************************************/
+    .cajaSolid {
+        width: 100%;
+        margin-left: 0;
+        height: 820px;
+        background-image: none;
+    }
+
+    .cajaSolid::before {
+        opacity: 1;
+    }
+
+    div.cajaFlotante {
+        margin-left: 0;
+        width: 90%;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    .imgLocation {
+        height: 3px !important;
+        margin-top: 15px !important;
+    }
+
+    .txtLocation {
+        font-size: 20px !important;
+        font-weight: 900;
+        margin-top: 0px !important;
+    }
+
+    .cajaFlotante h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .cajaFlotante p {
+        width: 90% !important;
+    }
+
+    .cajaFlotante button {
+        width: 100%;
+        font-size: 16px;
+        padding: 20px 0;
+    }
+
+    .colInfo1 {
+        padding: 0px 0px 0px 35px;
+        margin-top: -10px;
+    }
+
+    .colInfo2 {
+        padding: 0px 0px 0px 35px;
+        margin-top: -10px !important;
+    }
+
+    .div2,
+    .div3 {
+        margin-top: 25px;
+    }
+
+    .cajaContenedora {
+        margin-top: -50px;
+        height: 890px;
+    }
+
+    img.imgBus {
+        height: 450px !important;
+    }
+
+    .frameBus {
+        height: 250px;
+    }
+
+    /*****************************************************
+                 Columnas metro bus
+    *****************************************************/
+    .frameBus {
+        height: 200px;
+        margin-left: 100px;
+    }
+
+    .cajaMapaBus {
+        margin-top: 470px;
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .cajaImgMapa {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .imgInfoRutas img {
+        margin-left: 170px;
+    }
+
+    .imgMapa img {
+        height: 460px;
+    }
+
+    .imgInfoRutas {
+        height: 850px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    .imgInfoRutas p {
+        font-size: 50px;
+        padding: 20px 25px;
+        line-height: 60px;
+    }
+
+    /*****************************************************
+                     Columnas video
+    *****************************************************/
+
+    .cajaVideo {
+        width: 104%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 390px;
+    }
+
+    /*****************************************************
+                     Columnas empresas
+    *****************************************************/
+
+    .empresasMovil {
+        display: block;
+        width: 75%;
+    }
+
+    .txtFinal {
+        margin-top: -50px;
+    }
+
+    .txtFinal h1 {
+        font-size: 25px;
+        font-weight: 900;
+    }
+
+    .txtFinal p {
+        font-size: 16px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgEscritorio {
+        display: none;
+    }
+
+    .btnView button {
+        background: #129B46;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 15px 60px;
+        margin-left: 20px;
+        border: none;
+    }
+
+    #empOcultas {
+        display: none;
+    }
+
+    button#closeComp {
+        display: none;
+        background: #00394C;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 15px 60px;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    /****************************************************
+                    Gracias
+    ****************************************************/
+    .gracias h1 {
+        font-size: 95px;
+    }
+
+    .gracias p {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .gracias img {
+        width: 50%;
+    }
+}
+
+/**************************************************** MOVIL *****************************************************/
+@media screen and (max-width: 750px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    
+
+    /****************************************************
+                        Header
+    ****************************************************/
+    #header {
+        display: none;
+    }
+
+    #fondoNav {
+        background: white;
+        box-shadow: 0px 3px #cfdadd9a;
+    }
+
+    #iconMov1,
+    #iconMov2 {
+        height: 40%;
+    }
+
+    #iconMov2 {
+        margin-left: -15px;
+    }
+
+    #iconMov2 {
+        display: none;
+    }
+
+    #cerrar {
+        display: none;
+    }
+
+    .navbar-toggler-icon {
+        color: #FFFFFF;
+    }
+
+    #iconTel {
+        margin-left: 88px;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("../icons/hamburgesa.png") !important;
+        margin-left: -15px;
+    }
+
+    .navbar-light .navbar-toggler {
+        border-color: transparent;
+        font-size: 1rem !important;
+    }
+
+    .menu {
+        display: block !important;
+        width: 100%;
+    }
+
+    .linkMovil {
+        margin-top: 75px;
+    }
+
+    .linkMovil li {
+        color: #FFFFFF;
+        font-size: 25px;
+        font-weight: 900;
+        list-style: none;
+        padding: 10px 0px;
+        margin-bottom: 0px;
+    }
+
+    .lisIdioma {
+        color: white;
+    }
+
+    /*.idioma {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .idioma a {
+        color: #FFFFFF;
+        font-size: 13px;
+        font-weight: 900;
+        padding: 0;
+        margin: 20;
+    }*/
+
+    /*a.eng {
+        margin-left: 10px;
+    }
+
+    a.es {
+        margin-left: -20px;
+    }
+
+    a.ch {
+        margin-left: -10px;
+    }*/
+
+    /*****************************************************
+                     Carousel hero
+    *****************************************************/
+    img.escritorio {
+        display: none!important;
+    }
+    img.movil {
+        display: block!important;
+    }
+    .carousel-item img {
+        height: 540px;
+        width: 100% !important;
+        background-size: cover !important;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    div.carousel-caption {
+        margin-top: -25px !important;
+    }
+
+    .carousel-caption h1 {
+        display: block;
+        position: absolute;
+
+    }
+
+    .carousel-caption {
+        padding-top: 45px;
+    }
+
+    .carousel-indicators li {
+        padding: 2px 7px;
+    }
+
+    .carousel-indicators li {
+        margin-top: -10px;
+    }
+
+    div.carousel-caption {
+        margin-top: 75px;
+    }
+
+    h1.carH1 {
+        font-size: 30px;
+        margin-top: -420px;
+        text-align: center;
+        line-height: 42px;
+    }
+
+    p.parrafo {
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        margin-top: -280px;
+        font-weight: 700;
+    }
+
+    .bd-example ol {
+        margin-bottom: 0px;
+    }
+
+    .button-container {
+        display: block;
+        padding: 0;
+        margin: 0px;
+    }
+
+    .button-container button {
+        width: 130%;
+    }
+
+    #btnCon {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-left: -35px;
+        padding: 10px 10px;
+    }
+
+    .bd-example .btnContactTransparent {
+        margin-left: -35px;
+        padding: 10px 0px;
+    }
+
+    .imgPrev,
+    .imgNext {
+        display: none;
+    }
+
+    /*****************************************************
+                     Columnas azules
+    *****************************************************/
+    .cajasAzul {
+        width: 90%;
+        margin-top: -45px;
+    }
+
+    div.caja {
+        border: none !important;
+    }
+
+    .caja img {
+        width: 20%;
+    }
+
+    .caja h1 {
+        font-size: 40px;
+    }
+
+    .caja p {
+        font-size: 16px;
+    }
+
+
+    /*****************************************************
+                     Columnas about
+    *****************************************************/
+
+    .cajaAbout img {
+        width: 95%;
+        height: 95%;
+        margin-top: -30px;
+    }
+
+    .imgAbout {
+        margin-top: 0;
+    }
+
+    .titulo {
+        margin-top: 15px;
+    }
+
+    .txtTit {
+        margin-top: -36px;
+    }
+
+    .titulo img {
+        width: 15%;
+    }
+
+    .txtUni {
+        font-size: 21px;
+        margin-top: -5px !important;
+    }
+
+    .txtDesc {
+        width: 95%;
+    }
+
+    .txtLista li {
+        font-size: 14px;
+        margin-left: -40px;
+    }
+
+    .ourModel h1 {
+        font-size: 30px;
+    }
+
+    .ourModel p {
+        width: 95%;
+    }
+
+    .btnContact {
+        width: 90%;
+        font-size: 12px;
+        margin-left: 15px;
+    }
+
+    .bola::before {
+        font-size: 12px;
+    }
+
+    /*****************************************************
+                    Columnas galery
+    *****************************************************/
+    .colProy {
+        margin-top: -150px;
+    }
+
+    .cajaSliderMov {
+        margin-top: 50px;
+        margin-left: -20px;
+    }
+
+    .infoProy img {
+        margin-top: -100px;
+    }
+
+    /*****************************************************
+                    Columnas ourmodel
+    *****************************************************/
+    .ourModel {
+        margin-top: 10px;
+    }
+
+    .ourModel h1 {
+        font-size: 33px;
+        font-weight: 900;
+    }
+
+    .ourModel p {
+        width: 100%;
+        font-weight: 400;
+    }
+
+    #lotes {
+        margin-top: 35px;
+        margin-left: -26px;
+        height: 200px;
+    }
+
+    #colLotes button {
+        display: block;
+        margin-top: 20px;
+        padding: 10px 63px;
+        background: #129B46;
+        color: #FFFFFF;
+        font-size: 14px;
+        font-weight: 700;
+        border: transparent;
+    }
+
+    .imgFases img {
+        margin-left: -20px;
+    }
+
+    /***************************************************** 
+                    Columnas download info
+    *****************************************************/
+    .colProy {
+        height: 320px;
+        background: #ffffff;
+    }
+
+    img.rectangulo {
+        height: 4px;
+    }
+
+    p.txtTit {
+        font-size: 17px;
+        font-weight: 900;
+    }
+
+    .cajProy h1 {
+        font-size: 23px;
+        font-weight: 900;
+
+    }
+
+    .imgProject {
+        display: none;
+    }
+
+    .cajaDown {
+        height: 580px;
+    }
+
+    .columnasliderMov {
+        margin-bottom: 30px;
+    }
+
+    .cajaImg {
+        display: none;
+    }
+
+    .slMovil,
+    .slMovil2 {
+        display: block !important;
+        margin-top: -35px;
+        border: none;
+    }
+
+    .cajaInfo {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .subir {
+        margin-top: -30px;
+    }
+
+    .cajaInfo img {
+        width: 15%;
+    }
+
+    .cajaInfo h1 {
+        font-size: 14px;
+    }
+
+    .cajaInfo p {
+        width: 110%;
+        font-size: 12px;
+    }
+
+    .btnDownload {
+        width: 100%;
+    }
+
+    .btnDownload button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .info {
+        padding: 0px 15px;
+    }
+
+    .info img {
+        margin-top: -220px;
+    }
+
+    .info h1 {
+        margin-top: -85px;
+    }
+
+    /*****************************************************
+                 Columnas strategic
+     *****************************************************/
+    .imgAbout {
+        margin-top: 0px !important;
+    }
+
+    .titulo img {
+        margin-top: 25px;
+    }
+
+    .titulo p {
+        margin-top: 17px;
+        
+    }
+
+    /*****************************************************
+                    Columnas population
+    *****************************************************/
+    .txtPop {
+        font-size: 23px;
+        width: 80%;
+        margin-bottom: 0;
+        margin-top: 50px;
+    }
+
+    .txtBenefit {
+        width: 95% !important;
+    }
+
+    .imgPop img {
+        width: 100% !important;
+        margin-left: -5px;
+        margin-bottom: 35px;
+    }
+    table {
+        margin-left: -35px;
+    }
+    p.txtTable {
+        font-size: 14px;
+    } 
+    td.txtTD {
+        font-size: 10px;
+    }
+
+    /*****************************************************
+                    Columnas key benefits
+    *****************************************************/
+    .infoKey {
+        margin-top: -15px;
+    }
+
+    /*****************************************************
+                Columnas solid infraestructura
+    *****************************************************/
+    .cajaSolid {
+        width: 100%;
+        margin-left: 0;
+        height: 1095px;
+        background-image: none;
+    }
+
+    .cajaSolid::before {
+        opacity: 1;
+    }
+
+    div.cajaFlotante {
+        margin-left: 0;
+        width: 90%;
+        height: 340px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+        padding: 20px;
+    }
+
+    .imgLocation {
+        height: 3px !important;
+        margin-top: 15px !important;
+    }
+
+    .txtLocation {
+        font-size: 20px !important;
+        font-weight: 900;
+        margin-top: 0px !important;
+    }
+
+    .cajaFlotante h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .cajaFlotante p {
+        width: 90% !important;
+    }
+
+    .cajaFlotante button {
+        width: 100%;
+        font-size: 16px;
+        padding: 20px 0;
+    }
+
+    .colInfo1 {
+        padding: 0px 0px 0px 35px;
+        margin-top: 70px;
+    }
+
+    .colInfo2 {
+        padding: 0px 0px 0px 35px;
+        margin-top: -10px !important;
+    }
+
+    .cajaVideo {
+        width: 104%;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        margin-top: 455px;
+    }
+
+    /*****************************************************
+                      Columnas metro bus
+    *****************************************************/
+    .cajaContenedora {
+        background: #ffffff;
+    }
+
+    .cajaMetro {
+        padding: 0;
+    }
+
+    .infoBus {
+        margin-top: -5px;
+        width: 95%;
+        padding: 0;
+    }
+
+    .infoBus h1 {
+        font-size: 30px;
+        margin-top: -10px;
+    }
+
+    .infoBus h3 {
+        margin-top: -10px;
+    }
+
+    img.imgBus {
+        margin-top: 25px;
+        width: 110% !important;
+    }
+
+    .cajaMapaBus {
+        width: 100%;
+        margin-top: 260px;
+        height: 680px;
+        padding-top: 10px;
+    }
+
+    .cajaImgMapa {
+        display: none;
+    }
+
+    .cajMapMov {
+        display: block;
+    }
+
+    .imgInfoRutas {
+        margin-left: auto;
+        margin-right: auto;
+        width: 79%;
+        margin-bottom: 10px;
+        font-size: 17px;
+    }
+
+    .imgInfoRutas p {
+        font-size: 17px;
+    }
+
+    /*****************************************************
+                     Columnas empresas
+    *****************************************************/
+    .empresasMovil {
+        display: block;
+    }
+
+    .txtFinal {
+        margin-top: -50px;
+    }
+
+    .txtFinal h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+
+    .txtFinal p {
+        font-size: 16px;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .imgEscritorio {
+        display: none;
+    }
+
+    .btnView button {
+        background: #129B46;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 15px 60px;
+        border: none;
+    }
+
+    #empOcultas {
+        display: none;
+        margin-bottom: 15px;
+    }
+
+    button#closeComp {
+        display: none;
+        background: #00394C;
+        color: #ffffff;
+        font-weight: 600;
+        padding: 15px 60px;
+        border: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+
+    /*****************************************************
+                        Gracias
+    *****************************************************/
+    .gracias h1 {
+        font-size: 50px;
+    }
+
+    .gracias p {
+        width: 90%;
+        font-size: 20px;
+    }
+
+}
+
+/*****************************************************
+                Sliders movil
+*****************************************************/
+.sliderMov,
+.slideMov2 {
+    width: 490px;
+    height: 290px;
+}
+
+/*Primer slider*/
+.gal1 {
+    background-image: url("../img/fabrica.png");
+    background-size: cover;
+    position: relative;
+}
+
+.gal2 {
+    background-image: url("../img/parque.png");
+    background-size: cover;
+    position: relative;
+}
+
+.gal3 {
+    background-image: url("../img/camioneta.png");
+    background-size: cover;
+    position: relative;
+}
+
+/*Segundo slider*/
+.indu {
+    background-image: url("../img/industrial.png");
+    background-size: cover;
+    position: relative;
+}
+
+.imgBts {
+    background-image: url("../img/bts.png");
+    background-size: cover;
+    position: relative;
+}
+
+.imgBuldi {
+    background-image: url("../img/buldings.png");
+    background-size: cover;
+    position: relative;
+}
+
+.indu::before,
+.imgBts::before,
+.imgBuldi::before {
+    content: '';
+    position: absolute;
+    background: linear-gradient(360deg, #00394C 0%, rgba(0, 57, 76, 0) 100%);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.wrapper,
+.wrapper2 {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+}
+
+#items,
+#items2,
+#caja {
+    width: 10000px;
+    position: relative;
+    top: 0;
+    left: -300px;
+}
+
+#items.shifting,
+#items2.shifting {
+    transition: left .1s ease-out;
+}
+
+#caja.shifting {
+    transition: left .1s ease-out;
+}
+
+.slideMov,
+.slideMov2 {
+    width: 295px;
+    height: 400px;
+    cursor: pointer;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 1s;
+    position: relative;
+    margin-right: 10px;
+    z-index: 100;
+    border: none;
+
+}
+
+.control,
+.control2 {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 20px;
+    margin-top: -20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.prev,
+.prev2 .next,
+.next2 {
+    background-size: 22px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.prev:active,
+.next:active {
+    transform: scale(0.8);
+}
+
+.prev2:active,
+.next2:active {
+    transform: scale(0.8);
+}
+
+.titulo {
+    font-size: 20px;
+    color: #1E9CAC;
+    letter-spacing: 0;
+}
+
+.subtitulo {
+    margin-top: -25px;
+    font-size: 16px;
+    color: #707070;
+    letter-spacing: 0;
+    padding: 0px 45px;
+}
+
+area {
+    cursor: pointer;
+}
+
+.contenedoraMap {
+    margin-top: -12px;
+}
+
+.modal-content {
+    border: none !important;
+    margin-left: -320px;
+    height: 550px;
+    width: 1180px;
+
+}
+
+.colMap {
+    padding: 45px;
+}
+
+.infoLote {
+    padding: 35px;
+    background: #F7F8F9;
+}
+
+#carouselExampleControls .carousel-control-prev-icon {
+    padding: 20px 20px;
+    border-radius: 100%;
+    box-shadow: -1px -1px 10px 0px rgba(0, 0, 2, 0.64);
+    margin-left: -105px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAABuwAAAbsBOuzj4gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJfSURBVHic7Zq/SyNBFMffTGL8kY0Jh8HD6KGoaWw8NBA5LbSwCBgUjGJhqaKlpY1JbWWhYHOWV4k/GlHwH7hK/wk9ODjujguJxuTZqJxuosnuvkxmJl+YIrszb97nkyWBTBgigs7hohsQnboA0Q2ITl2A6AZEh1xA29R6KDC+usJSqdqUjYhkwze+FOfeD3kAQG9k7oRyL6uD7F1pnViOp78fHBbSvx73QEa1l52QCHgN39Q78qOle2CBYi/boXzsAQCbekdugomkIfpRLzXI4dsXt7yiIasiQEZ4xwTICu+IAJnhbQuQHd6WABN83xfp4C0LUAXekgCV4CsWYILvH72WGb4iASrCly1AVfiyBKgM/64A1eHfFKADfEkBxeA7lvdaRDdbFQE6wZsEmODDY0rDvxCgI/yzAF3hERGYEU3Mpy9Pv2H2HwMAaPw0mPN0ff6KgHdUv0PWQhjnWY/fv82YuzGP97e1eWhBnIaP4QwHxvX9gwB3F9zG0OxM+ur4qJD5ywEAGkIDueae6C4CZkT3RxnGeRb9nTuAiOCfWJt0+dru4elDsCfyMzCdDIj+gKrat4DOEl680FGC6YJuEope1ElCyRu6SHjzpg4S3p2guoSyJqksoeyJqkqoaLKKEipeoJoES4tUkmB5oSoSbC1WQYLtArJLcKSIzBIcKySrBEeLySjB8YKySSApKpMEssKvJRjDiTPRsMUG2YHI74udcyMyF3P5gnkAAOb25Kn2shOGSHsu4ottBF2Yi/+Jbu3jJhRIN7MQcgG1Hi3PBP9PXYDoBkSnLkB0A6LzAERQhzEqM1SVAAAAAElFTkSuQmCC");
+    background-size: cover;
+}
+
+#carouselExampleControls .carousel-control-next-icon {
+    padding: 20px 20px;
+    border-radius: 100%;
+    box-shadow: -1px -1px 10px 0px rgba(0, 0, 2, 0.64);
+    margin-right: -75px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAABuwAAAbsBOuzj4gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAI9SURBVHic7ds/SyNBGMfxZybqjUnMukognI1ehMNS8F8sBAtTBMVrooiNd42IqFwj2mllat/EgaU24isQsdIXIKgQMY1BlLuQ7FhESyXuZfY3M8kD22ae74fdDQTCpJTUyMPRC6CnCYBeAD1NAPQC6NESgO3u8s7JleX47NpX5YdJKbW7IsNzh0QkQx3xSmxqPaPyLC3vACLGiIgqjwX+dPrnyElvZFSdpCVAuHdgQSRTd0QBIKBv9/eueHYnKpKpPBFJUvg4wEPRCPBINAI8EI0Aj0MjwMPQCPAoNAI8CI0Aj0EjwEPQCPAINAI8AI0AXx6NAF8cjQBfGo0AXxiNAF8WjQBfFI0AXxKNAF8QjcC6p3/3lIrFDel5QsmPjpoMI9b27/r8V+nmspWIiLfHZHhwZo5aE9+f6VWm0S7W8qXMiXHv/30NHcZZixia720v3q5a/whwLv5ena2Wbi6qj0DE9SKjCz/gL6ggrq7F/ZjoH7+nt5egkyg7M1vphvgW+CjeeoCuxf2YSKbejbcaoJZ4awFqjbcS4DPx1gFU48dqjrcKwE+8NQB+460AcLM5x2+88QBuNueIb/7jjQaoR7yxAPWKNxKgnvHGAVTjRwr1ijcKQEW8MQCq4o0AcLM5R/QNK4nXHkB1vNYAQcRrCxBUvLYA0ZH54yDipdT0/wKMhzwiopCTqEQnljIPh3snys6SUqr6bN/DiFhnZvOniLpH+YPtgtKzdAQIcrR8BIKcJgB6AfQ0AdALoOcFjEbAmitu61kAAAAASUVORK5CYII=");
+    background-size: cover;
+}
+
+.btnLote {
+    background: transparent;
+    font-size: 16px;
+    padding: 10px 40px;
+}
+
+.close:hover {
+    background: none !important;
+}
+
+.colFases img {
+    height: 350px;
+    padding: 50px;
+    margin-top: 50px;
+    border: 3px solid #eee;
+}
+
+@media screen and (max-width: 767px) {
+    .modal-content {
+        width: 360px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+
+    img#imgModal {
+        height: 220px;
+        padding: 0;
+    }
+
+}

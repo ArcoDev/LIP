@@ -1,0 +1,95 @@
+.columna {
+    float: left;
+    width: 23%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.demo:hover {
+    opacity: 85%;
+}
+
+.modalGalery {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+.modalCuerpo {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px 30px 120px 30px;
+    width: 100%;
+    max-width: 630px;
+}
+
+.cerrar {
+    color: white;
+    font-weight: 900;
+    font-size: 35px;
+    float: right;
+    margin: 35px;
+    margin-top: -25px;
+    cursor: pointer;
+}
+
+.cerrar:hover,
+.cerrar:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.slideImg {
+    display: none;
+    width: 98%;
+}
+
+
+.anterior,
+.siguiente {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    padding: 7px;
+    top: 50%;
+    color: black;
+    font-weight: bold;
+    background: white;
+    font-size: 25px;
+    transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.anterior {
+    left: -5px;
+    border-radius: 100%;
+}
+
+.siguiente {
+    right: -5px;
+    border-radius: 100%;
+}
+
+.anterior:hover,
+.siguiente:hover {
+    background: white;
+    color: black;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}

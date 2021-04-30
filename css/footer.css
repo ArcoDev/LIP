@@ -1,0 +1,273 @@
+div.cajaFoter {
+    height: 650px;
+    background: #F7F8F9;
+    margin-top: -425px;
+    padding: 0px 40px;
+}
+
+.infoImg,
+.infoDir,
+.infoTag {
+    margin-top: 460px;
+}
+
+.infoImg img {
+    padding: 0px 15px;
+    margin-top: 16px;
+}
+
+.imgLip {
+    height: 100px;
+}
+
+.imgAre {
+    height: 115px;
+}
+
+.infoDir h3 {
+    font-size: 18px;
+    color: #00394C;
+    font-weight: 900;
+    padding: 20px 0px;
+}
+
+.infoDir p {
+    font-size: 14px;
+    color: #00394C;
+    font-weight: 500;
+    line-height: 15px;
+    padding: 0px 0px;
+}
+
+.infoTag h3 {
+    font-size: 18px;
+    color: #00394C;
+    font-weight: 900;
+    padding: 20px 0px;
+    margin-left: 25px;
+}
+
+
+.link1 {
+    margin-bottom: 15px;
+}
+
+.link1 a,
+.link2 a {
+    color: #00394C;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0px 50px 0px 0px;
+    margin-left: 20px;
+}
+
+a.gal {
+    padding: 0;
+    margin-left: 0px;
+}
+
+a.cont {
+    margin-left: 135px;
+}
+
+.cajaID {
+    height: 90px;
+    padding: 35px 0px;
+    background: rgba(0, 57, 76, 0.05);
+}
+
+.condi p {
+    margin-left: 75px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5F7D95;
+}
+
+.website a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5F7D95;
+}
+
+.btnIdioma:hover,
+.link1 a:hover,
+.link2 a:hover,
+.infoDir p:hover {
+    cursor: pointer;
+    color: #129B46;
+    font-weight: 700;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    #header {
+        display: none;
+    }
+
+    #menuMovil {
+        display: block;
+    }
+
+    div.cajaFoter {
+        margin-top: 0;
+        padding: 0;
+        height: 450px;
+    }
+
+    .infoImg,
+    .infoDir,
+    .infoTag {
+        margin-top: 0;
+    }
+
+    .infoImg {
+        padding-top: 45px;
+        padding-left: 8px;
+        margin-bottom: 40px;
+    }
+
+    .infoDir {
+        padding-left: 0px;
+    }
+
+    .infoDir p {
+        width: 80%;
+        line-height: 20px;
+    }
+
+    .infoDir h3 {
+        margin-top: 45px;
+    }
+
+    .link1,
+    .link2 {
+        margin-left: 140px;
+    }
+
+    .link1 a,
+    .link2 a {
+        list-style: none;
+        line-height: 25px;
+        justify-content: space-between;
+        letter-spacing: 1px;
+    }
+
+    .cajaID {
+        height: 190px;
+    }
+
+    .condi p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 30px;
+        width: 70%;
+    }
+
+    a.linkID {
+        margin-left: 75px;
+    }
+
+    .imgAre {
+        height: 165px;
+    }
+
+    .imgLip {
+        height: 140px;
+    }
+
+    .infoTag h3 {
+        font-size: 25px;
+        margin-left: 230px;
+        margin-top: -35px;
+    }
+
+    .website a {
+        margin-left: 250px
+    }
+}
+
+/* Movil */
+@media screen and (max-width: 767px) {
+
+    html,
+    body {
+        overflow-x: hidden !important;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    div.cajaFoter {
+        margin-top: 0;
+        padding: 0;
+        height: 550px;
+    }
+
+    .infoImg,
+    .infoDir,
+    .infoTag {
+        margin-top: 0;
+    }
+
+    .infoImg {
+        padding-top: 45px;
+        padding-left: 45px;
+        margin-bottom: 40px;
+    }
+
+    .infoDir {
+        padding-left: 35px;
+    }
+
+    .infoDir p {
+        width: 80%;
+        line-height: 20px;
+    }
+
+    .infoDir h3 {
+        margin-top: -15px !important;
+    }
+
+    .link1 a,
+    .link2 a {
+        display: list-item;
+        list-style: none;
+        line-height: 25px;
+    }
+
+    .link2 {
+        margin-left: 190px;
+        margin-top: -90px;
+    }
+
+    a.gal {
+        padding: 0;
+        margin-left: 20px;
+    }
+
+    a.cont {
+        margin-left: 20px;
+    }
+
+    .cajaID {
+        height: 190px;
+    }
+
+    .condi p {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        line-height: 30px;
+        width: 70%;
+    }
+
+    a.linkID {
+        margin-left: 75px;
+    }
+}
